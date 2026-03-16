@@ -1,0 +1,15 @@
+.movie-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.movie-card__image {
+  height: 400px;
+  object-fit: cover;
+}

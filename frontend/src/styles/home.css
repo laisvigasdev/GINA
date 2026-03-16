@@ -1,0 +1,102 @@
+.home-page {
+  min-height: 100vh;
+  color: white;
+  background:
+    radial-gradient(circle at top left, rgba(255, 0, 110, 0.18), transparent 25%),
+    radial-gradient(circle at top right, rgba(131, 56, 236, 0.16), transparent 25%),
+    radial-gradient(circle at bottom center, rgba(58, 134, 255, 0.14), transparent 25%),
+    linear-gradient(180deg, #0b0b12 0%, #11111b 45%, #09090f 100%);
+}
+
+.home-hero {
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.home-hero__title {
+  max-width: 700px;
+  line-height: 1.05;
+}
+
+.home-hero__subtitle {
+  max-width: 650px;
+}
+
+.home-badge {
+  width: fit-content;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #ff006e, #fb5607, #ffbe0b, #8338ec, #3a86ff);
+}
+
+.home-chip {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.home-featured-card {
+  max-width: 720px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.home-eyebrow {
+  letter-spacing: 0.18em;
+  color: #ff8fab;
+}
+
+.home-count-pill {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.home-movie-card-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-movie-card-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.home-state {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.home-state--loading {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 110, 0.18),
+    rgba(131, 56, 236, 0.18),
+    rgba(58, 134, 255, 0.18)
+  );
+}
+
+.home-state--error {
+  background: rgba(255, 0, 80, 0.12);
+}
+
+.home-state--empty {
+  background: rgba(255, 255, 255, 0.04);
+}
