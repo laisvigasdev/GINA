@@ -11,9 +11,14 @@ const keywords = [
   "intersex",
   "drag",
   "coming out",
-  "pride",
-  "gl",
-  "bl"
+  "pride"
 ]
 
-export default [...new Set(keywords)]
+const countryCodes = {
+  thai: "TH",
+  japan: "JP",
+  korea: "KR",
+}
+
+export const uniqueKeywords = [...new Set(keywords)]
+export const countries = countryCodes

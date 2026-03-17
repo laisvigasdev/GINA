@@ -1,4 +1,4 @@
-import keywords from "../data/keywords"
+import { uniqueKeywords } from "../data/keywords"
 
 const BASE_URL = "https://api.themoviedb.org/3"
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY
@@ -54,7 +54,7 @@ async function getKeywordIds(keywordNames) {
 }
 
 export async function getLatestLgbtTitles() {
-  const keywordIds = await getKeywordIds(keywords)
+  const keywordIds = await getKeywordIds(uniqueKeywords)
 
   if (keywordIds.length === 0) {
     return []

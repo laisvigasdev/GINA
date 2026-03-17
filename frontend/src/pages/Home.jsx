@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
 import { getLatestLgbtTitles } from "../services/tmdb"
-import HeroSection from "../components/home/HeroSection"
 import SectionHeader from "../components/home/SectionHeader"
 import MoviesGrid from "../components/home/MoviesGrid"
 import HomeState from "../components/home/HomeState"
@@ -26,20 +25,6 @@ function Home() {
 
     fetchMovies()
   }, [])
-
-  const featuredMovie = useMemo(() => {
-    return movies.length > 0 ? movies[0] : null
-  }, [movies])
-
-  if (loading) {
-    return (
-      <HomeState
-        title="Curating something beautiful..."
-        message="Loading the latest LGBT titles for you."
-        variant="loading"
-      />
-    )
-  }
 
   if (error) {
     return (
